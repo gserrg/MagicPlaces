@@ -67,8 +67,10 @@ function run_magicwand() {
 		 // add new box to left of the map
 		var addon = document.createElement('section');
 		addon.innerHTML = '<b>WME Magic Wand</b> v' + wmelmw_version + '<br>'
-			+ '<label>Angle threshold <input type="text" id="_cMagicPlacesAngleThreshold" name="_cMagicPlacesAngleThreshold" value="12" size="3" maxlength="2" /></label><br/>'
-			+ '<label>Landmark simplification <input type="text" id="_cMagicPlacesSimplification" name="_cMagicPlacesSimplification" value="3" size="5" maxlength="4" /></label><br/>Usually 0-5, lesser gives more points in polygon<br/>';
+			+ '<label>Максимальный угол <input type="text" id="_cMagicPlacesAngleThreshold" name="_cMagicPlacesAngleThreshold" value="12" size="3" maxlength="2" /></label><br/>'
+			+ 'Значение, на которое скрипт может исправить угол, если для выпремления тербуется больше - не меняет (по умолчанию 12)<br><br>'
+			+ '<label>Степень выпрямления <input type="text" id="_cMagicPlacesSimplification" name="_cMagicPlacesSimplification" value="3" size="5" maxlength="4" /></label><br/><br/>';
+			+ 'Значение угла со значение котрого имли меньше, убираются узлы рекомендовано от 0 до 5 (по умолчанию 4)<br><br>'
 
 		addon.id = "sidepanel-magicwand";
 		addon.className = "tab-pane";
