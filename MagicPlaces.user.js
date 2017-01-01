@@ -4,14 +4,14 @@
 // @include             https://www.waze.com/editor/*
 // @include             https://www.waze.com/*/editor/*
 // @include             https://beta.waze.com/*
-// @version             1.0
+// @version             1.1.0
 // @grant               none
 // @license             CC BY 4.0
 // ==/UserScript==
 
 
 function run_magicwand() {
-	var wmelmw_version = "1.0";
+	var wmelmw_version = "1.1.0";
 
 	/* bootstrap, will call initialiseHighlights() */
 	function bootstraMagicPlaces() {
