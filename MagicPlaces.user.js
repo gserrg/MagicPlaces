@@ -4,7 +4,7 @@
 // @include             https://www.waze.com/editor/*
 // @include             https://www.waze.com/*/editor/*
 // @include             https://beta.waze.com/*
-// @version             1.1.0
+// @version             1.1.1
 // @grant               none
 // @license             CC BY 4.0
 // ==/UserScript==
@@ -69,8 +69,8 @@ function run_magicwand() {
 		addon.innerHTML = '<b>WME Magic Wand</b> v' + wmelmw_version + '<br>'
 			+ '<label>Максимальный угол <input type="text" id="_cMagicPlacesAngleThreshold" name="_cMagicPlacesAngleThreshold" value="12" size="3" maxlength="2" /></label><br/>'
 			+ 'Значение, на которое скрипт может исправить угол, если для выпремления тербуется больше - не меняет (по умолчанию 12)<br><br>'
-			+ '<label>Степень выпрямления <input type="text" id="_cMagicPlacesSimplification" name="_cMagicPlacesSimplification" value="3" size="5" maxlength="4" /></label><br/><br/>';
-			+ 'Значение угла со значение котрого имли меньше, убираются узлы рекомендовано от 0 до 5 (по умолчанию 4)<br><br>'
+			+ '<label>Степень выпрямления <input type="text" id="_cMagicPlacesSimplification" name="_cMagicPlacesSimplification" value="3" size="5" maxlength="4" /></label><br/><br/>'
+			+ 'Значение угла со значение котрого имли меньше, убираются узлы рекомендовано от 0 до 5 (по умолчанию 4)<br><br>';
 
 		addon.id = "sidepanel-magicwand";
 		addon.className = "tab-pane";
